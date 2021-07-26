@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "react-bootstrap";
+import { Button, Navbar } from "react-bootstrap";
 
 export const StyledButton = styled(Button)`
   background-color: #f9573f;
@@ -13,4 +13,13 @@ export const StyledButton = styled(Button)`
         opacity: 0.8;
     }
 }
+`;
+
+export const StyledNavbar = styled(Navbar)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 2;
 `;

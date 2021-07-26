@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Content = styled.div`
   width: 100%;
   margin: 0 auto;
+  margin-top: 92px;
   background: #2b0955;
   color: #FFFFFF;
   min-height: 50vh;

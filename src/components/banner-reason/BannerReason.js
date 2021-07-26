@@ -1,8 +1,7 @@
 import { Content, ContentTitle, ContentReasons } from "./styled";
 
 const BannerReason = () => {
-  return (
-    
+  return (    
       <Content>
         <div className="container">
           <ContentTitle>
