@@ -49,11 +49,11 @@ export const VolunteersTestimony = styled.p`
   display: flex;
   align-items: center;
   padding-left: 28px;
+  text-shadow: 1px 1px #cdcdcd;
 `;
 
 export const VolunteerName = styled.p`
-  background-color: #f9573f;
-  color: #ffffff;
+  color: #000000;
   font-weight: 500;
   grid-column: 1 / 3;
   padding: 12px;

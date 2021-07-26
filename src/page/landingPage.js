@@ -5,6 +5,8 @@ import Testimony from "../components/testimony/Testimony";
 import { MainContainer } from "./styled";
 import Phases from "../components/phases/Phases";
 import Oportunities from "../components/oportunities/Oportunities";
+import BannerVolunteer from "../components/banner-volunteer/BannerVolunteer";
+import Footer from "../components/footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -15,6 +17,8 @@ const LandingPage = () => {
       <Testimony />
       <Phases />
       <Oportunities />
+      <BannerVolunteer />
+      <Footer />
     </MainContainer>
   );
 };
