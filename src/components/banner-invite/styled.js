@@ -1,43 +1,66 @@
 import styled from "styled-components";
-import { Container } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 
-export const StyledContainer = styled(Container)`
-  max-width: 100vw;
-  padding: 0;
+export const Content = styled.div`
+  width: 100%;
   margin: 0 auto;
   background: #2b0955;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  height: 50vh;
+  color: #FFFFFF;
+  min-height: 50vh;
+  padding: 2rem 0;
+  position: relative;
 
-  p:first-child {
-    font-size: 6em;
-    max-width: 100vw;
-    margin: 0 auto;
+  h2 {
+    font-size: 2.5rem;
+
+    @media(min-width: 720px) {
+      font-size: 4rem;
+    }
   }
 
-  p:second-child {
-    font-size: 18px;
-  }
-`;
+  p {
+    font-size: 1.5rem;
+    max-width: 671px;
+    font-weight: 400;
 
-export const StyledButton = styled(Button)`
-  background-color: #f9573f;
-  color: #ffffff;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
+    @media(max-width: 720px) {
+      font-size: 2rem;
+  }
+}
+
+  button {
+    background: #F9573F;
+    padding: 1.8rem 5rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    margin: 5rem auto 0 auto;
+    display: flex;
+
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
 
     &:hover {
-        background-color: #f9573f;
-        opacity: 0.8;
+      filter: brightness(0.9);
     }
-}`;
 
-export const Link = styled.a`
-  align-self: center;
-`;
+    @media(max-width: 720px) {
+      width: 100%;
+      margin-top: 3rem;
+      font-size: 1.5rem;
+      justify-content: center;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    margin-right: -3rem;
+
+    @media(max-width: 940px) {
+      display: none;
+    }
+  }
+`
