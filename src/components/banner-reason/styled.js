@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 50vh;
 
   p {
-    font-size: 6em;
+    font-size: 4em;
   }
 
   ol li {

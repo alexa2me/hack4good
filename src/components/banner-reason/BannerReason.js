@@ -17,14 +17,6 @@ const BannerReason = () => {
           O voluntariado está presente também na gestão da Ágatha, uma vez que a
           diretoria da instituição é toda composta por voluntários.
         </li>
-        <li>
-          O serviço voluntário não gera vínculo empregatício e nem obrigações de
-          natureza trabalhista, previdenciária ou afins. A atividade será
-          exercida após o candidato ao voluntariado participar do evento
-          “Boas-vindas e Formação do Voluntariado” e assinatura do Termo de
-          Adesão. Nele constará o objeto e as condições de seu exercício,
-          conforme Lei n.º 9.608, de fevereiro de 1998.
-        </li>
       </ol>
     </Container>
   );
