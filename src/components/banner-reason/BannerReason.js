@@ -1,24 +1,43 @@
-import { Container } from "./styled";
+import { Content, ContentTitle, ContentReasons } from "./styled";
 
 const BannerReason = () => {
-  return (
-    <Container>
-      <p>Razões para voluntário</p>
-      <ol>
-        <li>
-          Os voluntários da Ágatha são uma grande força de trabalho da
-          instituição, atuando nos programas e projetos, em atividades diversas
-          como: no administrativo, eventos e materiais, e em outras ações. Essas
-          atividades são realizadas tanto por pessoas físicas como também
-          pessoas jurídicas, cujos colaboradores e profissionais oferecem sua
-          expertise em benefício da Ágatha.
-        </li>
-        <li>
-          O voluntariado está presente também na gestão da Ágatha, uma vez que a
-          diretoria da instituição é toda composta por voluntários.
-        </li>
-      </ol>
-    </Container>
+  return (    
+      <Content>
+        <div className="container">
+          <ContentTitle>
+            <h2>
+              Somos a voz que denuncia!
+            </h2>
+            
+            <h2>
+              Mão gentil para quem precisa!
+            </h2>
+
+            <p>Venha ajudar mais mulheres a serem protagonistas da sua história</p>
+          </ContentTitle>
+
+          <ContentReasons>
+            <div className="reason">
+              <h3>Porque ser voluntário?</h3>
+              <ul>
+                <li>Desenvolver habilidades</li>
+                <li>Ganhar experiência</li>
+                <li>Contribuir para um mundo melhor</li>
+              </ul>
+            </div>
+
+            <div className="reason">
+              <h3>Áreas  que a ONG precisa de voluntário?</h3>
+              <ul>
+                <li>Educadores nos programas</li>
+                <li>Administrativo</li>
+                <li>Comunicação</li>
+              </ul>
+            </div>
+
+          </ContentReasons>
+        </div>
+      </Content>
   );
 };
 
