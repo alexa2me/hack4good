@@ -1,5 +1,5 @@
 import { StyledButton } from "../../components/header/styled";
-import { StyledContainer } from "../banner-invite/styled";
+import { StyledContainer, Link } from "../banner-invite/styled";
 
 const BannerInvite = () => {
   return (
@@ -9,11 +9,11 @@ const BannerInvite = () => {
         Seja um voluntário na Ágatha e impacte a vida de mulheres em situação de
         vulnerabilidade!
       </p>
-      <a href="https://forms.gle/U9nZaCwr1zrL65cEA">
-        <StyledButton variant="outline-primary" className="ml-2 float-right">
+      <Link href="https://forms.gle/U9nZaCwr1zrL65cEA">
+        <StyledButton variant="outline-primary" className="ml-2">
           Seja voluntário!
         </StyledButton>
-      </a>
+      </Link>
     </StyledContainer>
   );
 };
