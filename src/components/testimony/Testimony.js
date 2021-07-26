@@ -1,5 +1,5 @@
 import manVolunteer from "../../assets/images/man-volunteer.png";
-import womanVolunteer1 from "../../assets/images/woman-volunteer1.png";
+import womanVolunteer1 from "../../assets/images/woman-volunteer.png";
 import {
   VolunteerImage,
   MainContainer,
