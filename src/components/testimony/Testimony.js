@@ -1,10 +1,37 @@
-import { Carousel } from "react-bootstrap";
-import manVolunteer from "../../assets/images/man-volunteer.jpg";
-import womanVolunteer1 from "../../assets/images/woman-volunteer1.jpg";
-import womanVolunteer2 from "../../assets/images/woman-volunteer2.jpg";
+import manVolunteer from "../../assets/images/man-volunteer.png";
+import womanVolunteer1 from "../../assets/images/woman-volunteer1.png";
+import {
+  VolunteerImage,
+  MainContainer,
+  Title,
+  CardsContainer,
+  TestimonyCard,
+  VolunteersTestimony,
+  VolunteerName,
+} from "./styled";
 
 const Testimony = () => {
-  return <div></div>;
+  return (
+    <MainContainer>
+      <Title>Depoimentos dos voluntários</Title>
+      <CardsContainer>
+        <TestimonyCard>
+          <VolunteersTestimony>
+            Ser voluntária da ONG Ágatha mudou a minha forma de enxergar a vida.
+          </VolunteersTestimony>
+          <VolunteerImage src={womanVolunteer1} alt="woman volunteer" />
+          <VolunteerName>Thaís da Holanda</VolunteerName>
+        </TestimonyCard>
+        <TestimonyCard>
+          <VolunteersTestimony>
+            Ser voluntário da ONG Ágatha mudou a minha forma de enxergar a vida.
+          </VolunteersTestimony>
+          <VolunteerImage src={manVolunteer} alt="man volunteer" />
+          <VolunteerName>Fabiano das Arábias</VolunteerName>
+        </TestimonyCard>
+      </CardsContainer>
+    </MainContainer>
+  );
 };
 
 export default Testimony;
