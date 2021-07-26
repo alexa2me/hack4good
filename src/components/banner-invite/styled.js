@@ -8,9 +8,20 @@ export const StyledContainer = styled(Container)`
   margin: 0 auto;
   background: #2b0955;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 50vh;
 
   p:first-child {
-    font-size: 32px;
+    font-size: 6em;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+
+  p:second-child {
+    font-size: 18px;
   }
 `;
 
@@ -25,5 +36,8 @@ export const StyledButton = styled(Button)`
         background-color: #f9573f;
         opacity: 0.8;
     }
-}
+}`;
+
+export const Link = styled.a`
+  align-self: center;
 `;
