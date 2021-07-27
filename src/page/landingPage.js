@@ -4,7 +4,7 @@ import BannerReason from "../components/banner-reason/BannerReason";
 import Testimony from "../components/testimony/Testimony";
 import { MainContainer } from "./styled";
 import Phases from "../components/phases/Phases";
-import Opportunities from "../components/opportunities/Opportunities";
+import Oportunities from "../components/oportunities/Oportunities";
 import BannerVolunteer from "../components/banner-volunteer/BannerVolunteer";
 import Footer from "../components/footer/Footer";
 
@@ -16,7 +16,7 @@ const LandingPage = () => {
       <BannerReason />
       <Testimony />
       <Phases />
-      <Opportunities />
+      <Oportunities />
       <BannerVolunteer />
       <Footer />
     </MainContainer>
