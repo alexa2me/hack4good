@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   background-color: #ada7ce;
+  flex-direction: column;
   padding: 50px 0 20px;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
@@ -77,16 +78,39 @@ export const RequirementPurple = styled.p`
   margin: 0 auto;
 `;
 
+export const Content = styled.div`
+  max-width: 1140px;
+  width: 100%;
+`
+
 export const OpportunityCard = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  margin: 15px;
+  font-size: 1em;
+  padding: 0 1rem;
+
   background-color: #faf7f7;
-  margin: 10px;
-  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  div {
+    font-weight: 500;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 8px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
 `;
 
-export const OpportunityTitle = styled.p`
-  font-weight: 500;
-  border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 8px;
-`;
+// export const OpportunityTitle = styled.div`
+//   font-weight: 500;
+//   border-bottom: 1px solid #cdcdcd;
+//   padding-bottom: 8px;
+// `;

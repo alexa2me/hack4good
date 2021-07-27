@@ -8,6 +8,8 @@ import {
   RequirementGreen,
   RequirementPurple,
   OpportunityCard,
+  Content
+  // OpportunityTitle,
   OpportunityTitle,
   Heart,
   HeartContainer,
@@ -15,55 +17,69 @@ import {
 import GreenHeart from "../../assets/images/green-heart.png";
 import PurpleHeart from "../../assets/images/purple-heart.png";
 
+import Carousel from 'react-elastic-carousel';
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 }
+];
+
 const Oportunities = () => {
   return (
     <>
-      <Container>
-        <Title>Nossas Oportunidades</Title>
-        <OpportunityCard>
-          <OpportunityTitle>Programa Ateliê Tecendo Sonhos</OpportunityTitle>
-          <p>1 Vaga</p>
-          <p>
-            &#10150; Auxiliar a coordenação do programa de fomento ao
-            empreendedorismo.
-          </p>
-        </OpportunityCard>
+      <Container >
+        <Content>
+          <Title>Nossas Oportunidades</Title>
 
-        <OpportunityCard>
-          <OpportunityTitle>
-            Programa de Formação Educacional Profissional Social (FOPS)
-          </OpportunityTitle>
-          <p>2 Vagas</p>
-          <p>&#10150; Estudante de Pedagogia e/ou Pedagogo(a).</p>
-        </OpportunityCard>
+          <Carousel breakPoints={breakPoints}>
+            <OpportunityCard >
+              <div>Programa Ateliê Tecendo Sonhos</div>
+              <p>1 Vaga</p>
+              <p>
+                &#10150; Auxiliar a coordenação do programa de fomento ao
+                empreendedorismo.
+              </p>
+            </OpportunityCard>
 
-        <OpportunityCard>
-          <OpportunityTitle>Programa Sua Vida Vale Mais</OpportunityTitle>
-          <p>2 Vagas</p>
-          <p>
-            &#10150; Auxilia no programa de combate e prevenção ao tráfico de
-            pessoas e violência doméstica.
-          </p>
-        </OpportunityCard>
+            <OpportunityCard>
+              <div>
+                Programa de Formação Educacional Profissional Social (FOPS)
+              </div>
+              <p>2 Vagas</p>
+              <p>&#10150; Estudante de Pedagogia e/ou Pedagogo(a).</p>
+            </OpportunityCard>
 
-        <OpportunityCard>
-          <OpportunityTitle>Captação de Recursos</OpportunityTitle>
-          <p>9 Vagas</p>
-          <p>
-            &#10150; Área de Editais e gestão das ferramentas de Captação que
-            temos, captação na área de projetos Sociais, captação financeira com
-            pessoas físicas e jurídicas.
-          </p>
-        </OpportunityCard>
+            <OpportunityCard>
+              <div>Programa Sua Vida Vale Mais</div>
+              <p>2 Vagas</p>
+              <p>
+                &#10150; Auxilia no programa de combate e prevenção ao tráfico de
+                pessoas e violência doméstica.
+              </p>
+            </OpportunityCard>
 
-        <OpportunityCard>
-          <OpportunityTitle>Comunicação</OpportunityTitle>
-          <p>2 Vagas</p>
-          <p>
-            &#10150; Estudantes ou formados em Comunicação Social, Jornalismo ou
-            Publicidade e Propaganda.
-          </p>
-        </OpportunityCard>
+            <OpportunityCard>
+              <div>Captação de Recursos</div>
+              <p>9 Vagas</p>
+              <p>
+                &#10150; Área de Editais e gestão das ferramentas de Captação que
+                temos, captação na área de projetos Sociais, captação financeira com
+                pessoas físicas e jurídicas.
+              </p>
+            </OpportunityCard>
+
+            <OpportunityCard>
+              <div>Comunicação</div>
+              <p>2 Vagas</p>
+              <p>
+                &#10150; Estudantes ou formados em Comunicação Social, Jornalismo ou
+                Publicidade e Propaganda.
+              </p>
+            </OpportunityCard>
+          </Carousel>
+        </Content>
       </Container>
 
       <RequirementsDescription>
