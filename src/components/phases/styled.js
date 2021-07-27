@@ -1,108 +1,95 @@
 import styled from "styled-components";
 
-import { Col, Container } from "react-bootstrap";
-
-export const StyledContainer = styled(Container)`
+export const Container = styled.div`
   height: 70vh;
 `;
 
-export const StyledTitleCol = styled(Col)`
+export const Title = styled.p`
   font-size: 1.8em;
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 2.5em 0 1.5em 2.5em;
   color: #2b0955;
 `;
 
-export const StyledCol = styled(Col)`
-  display: flex;
+export const PhaseContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90%;
+  grid-gap: 10px;
 `;
 
-export const StyledColPhase2 = styled(Col)`
+export const PhaseNumber1 = styled.p`
   display: flex;
-  margin-left: 15em;
-  margin-top: 70px;
-`;
-
-export const StyledColPhase3 = styled(Col)`
-  display: flex;
-  margin-right: 23em;
-`;
-
-export const StyledColPhase4 = styled(Col)`
-  display: flex;
-  margin-top: 70px;
-  margin-right: 3em;
-`;
-
-export const Phase1 = styled.p`
-  color: #ffffff;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
   background-color: #f3b81e;
+  color: #ffffff;
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 3.5em;
+  height: 3.5em;
   font-weight: 600;
-  font-size: 1.4em;
-  margin-right: 10px;
-  position: relative;
-  bottom: 20px;
 `;
 
-export const Phase2 = styled.p`
-  color: #ffffff;
-  background-color: #359d10;
-  border-radius: 50%;
-  width: 185px;
-  height: 55px;
-  text-align: center;
+export const PhaseNumber2 = styled.p`
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
-  font-weight: 600;
-  font-size: 1.4em;
-  margin-right: 10px;
-  position: relative;
-  bottom: 20px;
-`;
-
-export const Phase3 = styled.p`
-  color: #ffffff;
+  justify-content: center;
   background-color: #2b0955;
+  color: #ffffff;
   border-radius: 50%;
-  width: 160px;
-  height: 55px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 3.5em;
+  height: 3.5em;
   font-weight: 600;
-  font-size: 1.4em;
-  position: relative;
-  bottom: 20px;
-  margin-right: 10px;
 `;
 
-export const Phase4 = styled.p`
-  color: #ffffff;
-  background-color: #0d1ca4;
-  border-radius: 50%;
-  width: 150px;
-  height: 55px;
-  text-align: center;
+export const PhaseNumber3 = styled.p`
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
   align-items: center;
+  justify-content: center;
+  background-color: #359d10;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
   font-weight: 600;
-  font-size: 1.4em;
-  margin-right: 10px;
-  position: relative;
-  bottom: 20px;
+`;
+
+export const PhaseNumber4 = styled.p`
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1ca4;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  font-weight: 600;
 `;
 
 export const DescriptionPhase1 = styled.p`
-  width: 40%;
+  width: 35%;
+  margin: 0 auto;
+  padding: 15px 0 0 10px;
+`;
+
+export const DescriptionPhase2 = styled.p`
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0 0 10px;
+`;
+
+export const DescriptionPhase3 = styled.p`
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0 0 10px;
+`;
+
+export const DescriptionPhase4 = styled.p`
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0 0 10px;
 `;

@@ -1,64 +1,52 @@
-import { Row, Col } from "react-bootstrap";
 import {
-  StyledContainer,
-  StyledTitleCol,
-  StyledCol,
-  StyledColPhase2,
-  StyledColPhase3,
-  StyledColPhase4,
-  Phase1,
-  Phase2,
-  Phase3,
-  Phase4,
+  Container,
   DescriptionPhase1,
+  DescriptionPhase2,
+  DescriptionPhase3,
+  DescriptionPhase4,
+  PhaseContainer,
+  Title,
+  PhaseNumber1,
+  PhaseNumber2,
+  PhaseNumber3,
+  PhaseNumber4,
 } from "./styled";
 
 const Phases = () => {
   return (
-    <StyledContainer>
-      <Row>
-        <StyledTitleCol>
-          Conheça as etapas para se tornar voluntário
-        </StyledTitleCol>
-      </Row>
-
-      <Row>
-        <StyledCol>
-          <Phase1>1</Phase1>
+    <Container>
+      <Title>Conheça as etapas para se tornar voluntário</Title>
+      <PhaseContainer>
+        <div>
+          <PhaseNumber1>1</PhaseNumber1>
           <DescriptionPhase1>Preencha o cadastro</DescriptionPhase1>
-        </StyledCol>
+        </div>
 
-        <Col></Col>
-
-        <StyledColPhase3>
-          <Phase3>3</Phase3>
-          <p>
-            Treinamento especifico, fechamento de vagas, assinatura do Termo de
-            Adesão
-          </p>
-        </StyledColPhase3>
-      </Row>
-
-      <Row>
-        <StyledColPhase2>
-          <Phase2>2</Phase2>
-          <p>
+        <div>
+          <PhaseNumber2>2</PhaseNumber2>
+          <DescriptionPhase2>
             Formação com duração de três horas para conhecer a estrutura,
             projetos e programas da ONG
-          </p>
-        </StyledColPhase2>
+          </DescriptionPhase2>
+        </div>
 
-        <Col></Col>
+        <div>
+          <PhaseNumber3>3</PhaseNumber3>
+          <DescriptionPhase3>
+            Treinamento especifico, fechamento de vagas, assinatura do Termo de
+            Adesão
+          </DescriptionPhase3>
+        </div>
 
-        <StyledColPhase4>
-          <Phase4>4</Phase4>
-          <p>
+        <div>
+          <PhaseNumber4>4</PhaseNumber4>
+          <DescriptionPhase4>
             Boas vindas! Apresentação dos voluntários à equipe do Instituto
             Social Ágatha
-          </p>
-        </StyledColPhase4>
-      </Row>
-    </StyledContainer>
+          </DescriptionPhase4>
+        </div>
+      </PhaseContainer>
+    </Container>
   );
 };
 
