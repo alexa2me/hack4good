@@ -34,11 +34,18 @@ export const HeartContainer = styled.div`
 export const Requirements = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD:src/components/opportunities/styled.js
   justify-content: center;
   align-items: center;
   width: 75%;
   margin: 0 auto;
   gap: 20px;
+=======
+  background-color: #ada7ce;
+  gap: 15px;
+  padding: 0 0 40px 0;
+  margin: 0;
+>>>>>>> main:src/components/oportunities/styled.js
 `;
 
 export const RequirementsTitleContainer = styled.p`
@@ -85,7 +92,7 @@ export const OpportunityCard = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const OpportunityTitle = styled.p`
+export const OpportunityTitle = styled.div`
   font-weight: 500;
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 8px;
