@@ -108,9 +108,3 @@ export const OpportunityCard = styled.div`
   }
 
 `;
-
-// export const OpportunityTitle = styled.div`
-//   font-weight: 500;
-//   border-bottom: 1px solid #cdcdcd;
-//   padding-bottom: 8px;
-// `;

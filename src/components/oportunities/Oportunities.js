@@ -8,9 +8,7 @@ import {
   RequirementGreen,
   RequirementPurple,
   OpportunityCard,
-  Content
-  // OpportunityTitle,
-  OpportunityTitle,
+  Content,
   Heart,
   HeartContainer,
 } from "./styled";
