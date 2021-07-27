@@ -21,28 +21,46 @@ export const Title = styled.h1`
   font-weight: 600;
 `;
 
-export const RequirementsTitle = styled.h2`
+export const Heart = styled.img`
+  width: 32px;
+  text-align: center;
+`;
+
+export const HeartContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Requirements = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  gap: 20px;
+`;
+
+export const RequirementsTitleContainer = styled.p`
   color: #2b0955;
   text-transform: uppercase;
-  font-size: 25px;
-  padding-left: 40px;
-  padding-bottom: 20px;
-  padding-top: 20px;
   grid-column: 1/4;
+  text-align: center;
+  padding: 40px 0 30px 0;
+`;
+
+export const RequirementsTitle = styled.p`
+  font-size: 1.3em;
 `;
 
 export const RequirementsDescription = styled.p`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   background-color: #ada7ce;
-  gap: 15px;
   padding: 0 0 40px 0;
+  margin: 0;
 `;
 
 export const RequirementGreen = styled.p`
-  background-color: #359d10;
-  border-radius: 70px;
-  color: #ffffff;
+  color: #359d10;
   width: 50%;
   padding: 10px;
   text-align: center;
@@ -50,32 +68,8 @@ export const RequirementGreen = styled.p`
   margin: 0 auto;
 `;
 
-export const RequirementBlue = styled.p`
-  background-color: #0d1ca4;
-  border-radius: 70px;
-  color: #ffffff;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-`;
-
-export const RequirementYellow = styled.p`
-  background-color: #f3b81e;
-  border-radius: 70px;
-  color: #ffffff;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-`;
-
-export const RequirementOrange = styled.p`
-  background-color: #f9573f;
-  border-radius: 70px;
-  color: #ffffff;
+export const RequirementPurple = styled.p`
+  color: #174aff;
   width: 50%;
   padding: 10px;
   text-align: center;

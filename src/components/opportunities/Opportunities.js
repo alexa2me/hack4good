@@ -1,15 +1,19 @@
 import {
   Container,
   Title,
+  Requirements,
+  RequirementsTitleContainer,
   RequirementsTitle,
   RequirementsDescription,
   RequirementGreen,
-  RequirementBlue,
-  RequirementYellow,
-  RequirementOrange,
+  RequirementPurple,
   OpportunityCard,
   OpportunityTitle,
+  Heart,
+  HeartContainer,
 } from "./styled";
+import GreenHeart from "../../assets/images/green-heart.png";
+import PurpleHeart from "../../assets/images/purple-heart.png";
 
 const Oportunities = () => {
   return (
@@ -63,27 +67,54 @@ const Oportunities = () => {
       </Container>
 
       <RequirementsDescription>
-        <RequirementsTitle>
-          <h2>Buscamos voluntários com estas características</h2>
-        </RequirementsTitle>
-        <div>
-          <RequirementGreen>Trabalho em equipe</RequirementGreen>
-        </div>
-        <div>
-          <RequirementBlue>Responsabilidade</RequirementBlue>
-        </div>
-        <div>
-          <RequirementYellow>Proatividade</RequirementYellow>
-        </div>
-        <div>
-          <RequirementYellow>Comunicação</RequirementYellow>
-        </div>
-        <div>
-          <RequirementGreen>Comprometimento</RequirementGreen>
-        </div>
-        <div>
-          <RequirementOrange>Disponibilidade</RequirementOrange>
-        </div>
+        <RequirementsTitleContainer>
+          <RequirementsTitle>
+            Buscamos voluntários com estas características
+          </RequirementsTitle>
+        </RequirementsTitleContainer>
+        <Requirements>
+          <div>
+            <HeartContainer>
+              <Heart src={PurpleHeart} />
+            </HeartContainer>
+            <RequirementPurple>Trabalho em equipe</RequirementPurple>
+          </div>
+          <div>
+            <HeartContainer>
+              <Heart src={GreenHeart} />
+            </HeartContainer>
+
+            <RequirementGreen>Responsabilidade</RequirementGreen>
+          </div>
+          <div>
+            <HeartContainer>
+              <Heart src={PurpleHeart} />
+            </HeartContainer>
+
+            <RequirementPurple>Proatividade</RequirementPurple>
+          </div>
+          <div>
+            <HeartContainer>
+              <Heart src={GreenHeart} />
+            </HeartContainer>
+
+            <RequirementGreen>Comunicação</RequirementGreen>
+          </div>
+          <div>
+            <HeartContainer>
+              <Heart src={PurpleHeart} />
+            </HeartContainer>
+
+            <RequirementPurple>Comprometimento</RequirementPurple>
+          </div>
+          <div>
+            <HeartContainer>
+              <Heart src={GreenHeart} />
+            </HeartContainer>
+
+            <RequirementGreen>Disponibilidade</RequirementGreen>
+          </div>
+        </Requirements>
       </RequirementsDescription>
     </>
   );
