@@ -35,7 +35,6 @@ export const RequirementsDescription = styled.p`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #ada7ce;
-  height: fit-content;
   gap: 15px;
   padding: 0 0 40px 0;
 `;
