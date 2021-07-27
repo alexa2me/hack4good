@@ -37,6 +37,7 @@ export const RequirementsDescription = styled.p`
   background-color: #ada7ce;
   gap: 15px;
   padding: 0 0 40px 0;
+  margin: 0;
 `;
 
 export const RequirementGreen = styled.p`
@@ -91,7 +92,7 @@ export const OpportunityCard = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const OpportunityTitle = styled.p`
+export const OpportunityTitle = styled.div`
   font-weight: 500;
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 8px;
