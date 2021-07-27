@@ -1,4 +1,5 @@
 import { Content, ContentTitle, ContentReasons } from "./styled";
+import loveImg from '../../assets/images/love.png'
 
 const BannerReason = () => {
   return (    
@@ -18,22 +19,34 @@ const BannerReason = () => {
 
           <ContentReasons>
             <div className="reason">
-              <h3>Porque ser voluntário?</h3>
-              <ul>
-                <li>Desenvolver habilidades</li>
-                <li>Ganhar experiência</li>
-                <li>Contribuir para um mundo melhor</li>
-              </ul>
+              <div className="reason-title">
+                <img src={loveImg} alt="" />
+                <h3>Porque ser voluntário?</h3>
+              </div>
+              <div className="reason-list">
+                <ul>
+                  <li>Desenvolver habilidades</li>
+                  <li>Ganhar experiência</li>
+                  <li>Contribuir para um mundo melhor</li>
+                </ul>
+              </div>
+
             </div>
 
             <div className="reason">
-              <h3>Áreas  que a ONG precisa de voluntário?</h3>
-              <ul>
-                <li>Educadores nos programas</li>
-                <li>Administrativo</li>
-                <li>Comunicação</li>
-              </ul>
+              <div className="reason-title">
+                <img src={loveImg} alt="" />
+                <h3>Áreas  que a ONG <br></br>precisa de voluntário?</h3>
+              </div>
+              <div className="reason-list">
+                <ul>
+                  <li>Educadores nos programas</li>
+                  <li>Administrativo</li>
+                  <li>Comunicação</li>
+                </ul>
+              </div>
             </div>
+            
 
           </ContentReasons>
         </div>

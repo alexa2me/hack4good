@@ -43,25 +43,41 @@ export const ContentTitle = styled.div`
 `
 
 export const ContentReasons = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  max-width:900px;
+  align-items: center;
+  margin: 0 auto;
 
   @media (max-width: 720px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
   }
 
   div.reason {
-    h3 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #F9573F;
+    div.reason-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 200px;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #F9573F;
+      }
+
+      img {
+        display: block;
+        width: 120px;
+      }
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    div.reason-list {
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
     }
   }
 `

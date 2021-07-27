@@ -30,12 +30,11 @@ export const Content = styled.div`
 
   button {
     background: #F9573F;
-    padding: 1.8rem 5rem;
+    padding: .5rem 2rem;
     border-radius: 0.5rem;
     font-size: 2rem;
     border: none;
     margin: 5rem auto 0 auto;
-    display: flex;
 
     a {
       color: #FFFFFF;
@@ -50,7 +49,6 @@ export const Content = styled.div`
       width: 100%;
       margin-top: 3rem;
       font-size: 1.5rem;
-      justify-content: center;
     }
   }
 
